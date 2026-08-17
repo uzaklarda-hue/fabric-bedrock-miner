@@ -1,3 +1,10 @@
+# This project is a fork of bunnyi116/fabric-bedrock-miner.
+
+Original project:
+https://github.com/bunnyi116/fabric-bedrock-miner
+
+---
+
 [Traditional Chinese](./README_TW.md) | [Simplified Chinese](./README.md) | **English**
 
 ---

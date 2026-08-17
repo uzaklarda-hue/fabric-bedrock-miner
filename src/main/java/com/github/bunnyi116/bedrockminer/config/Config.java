@@ -54,22 +54,7 @@ public class Config {
 
 
     public boolean isAllowBlock(Block block) {
-        var mc = Minecraft.getInstance();
-        // 方块黑名单检查(服务器)
-        if (!mc.isLocalServer()) {
-            for (var defaultBlockBlack : blockBlacklistServer) {
-                if (BlockUtils.getKeyString(block).equals(defaultBlockBlack)) {
-                    return false;
-                }
-            }
-        }
-        // 方块白名单检查(用户自定义)
-        for (var blockBlack : blockWhitelist) {
-            if (BlockUtils.getKeyString(block).equals(blockBlack)) {
-                return true;
-            }
-        }
-        return false;
+        return true;
     }
 
     public boolean isFloorsBlacklist(BlockPos pos) {
